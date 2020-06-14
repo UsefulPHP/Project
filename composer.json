@@ -1,0 +1,70 @@
+{
+  "name": "useful/project",
+  "description": "Useful Quickstart Project",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Lauren Black",
+      "email": "lauren@laurenblack.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "useful",
+    "quickstart",
+    "project",
+    "skeleton",
+    "components",
+    "library",
+    "psr",
+    "psr-1",
+    "psr-3",
+    "psr-4",
+    "psr-6",
+    "psr-7",
+    "psr-11",
+    "psr-12",
+    "psr-13",
+    "psr-14",
+    "psr-15",
+    "psr-16",
+    "psr-17",
+    "psr-18"
+  ],
+  "homepage": "https://useful.laurenblack.co.uk/",
+  "support": {
+    "docs": "https://useful.laurenblack.co.uk/docs",
+    "issues": "https://github.com/UsefulPHP/Project/issues",
+    "source": "https://github.com/UsefulPHP/Project",
+    "rss": "https://github.com/UsefulPHP/Project/releases.atom"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "useful/installer": "@stable",
+    "phpunit/phpunit": "^9.2.2",
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Test\\": "test/"
+    }
+  }
+}
+

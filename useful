@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+chdir(dirname(__DIR__));
+
+(function () {
+    define('USEFUL_START', microtime(true));
+    require getcwd() . '/bootstrap/init.php';
+
+    if(class_exists('\Useful\Commander')){
+        \Useful\Commander::run();
+    } else {
+        throw Exception('This script requires Useful Commander. Please run 'composer require useful\commander' then try again.'
+    }
+})();
